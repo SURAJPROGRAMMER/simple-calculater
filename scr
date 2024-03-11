@@ -37,7 +37,6 @@
         <input type="button" value="cal" onclick="calculate('/')"><br>
         <input type="buttum" value="clear" onclick="clear data"
       </div>    
-      </h1>
         <script>
             function appendToDisplay(value) {
                 document.getElementById('display').value += value;
@@ -54,24 +53,5 @@
                 }
             }
         </script>
-        <script>
-            function appendToDisplay(value) {
-                document.getElementById('display').innerHTML += value;
-            }
-            
-            function clearDisplay() {
-                document.getElementById('display').innerHTML = '';
-            }
-            
-            function calculate() {
-                try {
-                    var result = eval(document.getElementById('display').innerHTML);
-                    document.getElementById('display').innerHTML = '<font size="4">' + result + '</font>';
-                } catch(error) {
-                    document.getElementById('display').innerHTML = '<font size="4">Error</font>';
-                }
-            }
-        </script>
-    </h1>        
 </body>
 </html>
